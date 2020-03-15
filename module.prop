@@ -1,0 +1,7 @@
+id=qcmon
+name=QCMON
+version=v1
+versionCode=1
+author=kimocoder
+description=Qualcomm WiFi monitor mode for Android
+minMagisk=17000
