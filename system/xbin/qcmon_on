@@ -1,0 +1,54 @@
+#!/system/bin/sh
+
+# Initial configuration.
+# - Channel: 11
+# - Bandwidth: 40 MHz
+# - CRC Check: true
+# - Type (least significant to most significant):
+#   Management packets, Control packets, Data packets
+#   If you want data packets only, use 100
+# - Conversion bit: not required (means no conversion - RADIOTAP
+#   instead of Ethernet)
+CONF="11 40 1 111 0"
+
+if [ "$(id -u)" != "0" ]; then
+	echo "This script must be run as root"
+	exit 1
+fi
+
+if [ ! -e "/sys/module/wlan/parameters/con_mode" ]; then
+	echo "Looks like you have an unsupported device"
+	exit 1
+fi
+
+if ! which iwpriv > /dev/null ; then
+	echo "iwpriv command not found"
+	exit 1
+fi
+
+if [ "$#" -ne "0" ]; then
+	if [ "$#" -eq "5" ]; then
+		CONF=$@
+	else
+		echo "Usage: $0 [channel bandwidth crccheck type conversion]"
+		exit 1
+	fi
+fi
+
+# Disable the interface
+# 'ip link set wlan0 down' will not work because the daemon will reload the
+# driver after some time, and interface will go down even if we set it up later
+svc wifi disable
+sleep 1
+# Change driver mode to monitor-only
+echo 4 > /sys/module/wlan/parameters/con_mode
+# Wait for driver to reload
+sleep 2
+iwpriv wlan0 MonitorModeConf $CONF
+iwpriv wlan0 monitor 1
+
+# Stop lowi-server so it won't crash your kernel
+killall -q -SIGSTOP lowi-server || true
+
+# Go go go
+ip link set wlan0 up

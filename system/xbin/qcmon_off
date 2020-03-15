@@ -1,0 +1,29 @@
+#!/system/bin/sh
+if [ "$(id -u)" != "0" ]; then
+	echo "This script must be run as root"
+	exit 1
+fi
+
+if [ ! -e "/sys/module/wlan/parameters/con_mode" ]; then
+	echo "Looks like you have an unsupported device"
+	exit 1
+fi
+
+if ! which iwpriv > /dev/null ; then
+        echo "iwpriv command not found"
+        exit 1
+fi
+
+# Shutdown gracefully
+iwpriv wlan0 monitor 0
+# Disable the interface
+ip link set wlan0 down
+sleep 1
+# Change driver mode to STA
+echo 0 > /sys/module/wlan/parameters/con_mode
+# Wait for driver to reload
+sleep 2
+
+# Start lowi-server again
+killall -q -SIGCONT lowi-server || true
+
