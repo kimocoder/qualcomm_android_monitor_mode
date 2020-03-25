@@ -265,7 +265,8 @@ but monitor mode is turned off by default.
   * Telegram channel: https://t.me/joinchat/AAAAAFDVPDIHabBJwhL1Mw
 
 * Qualcomm
+  * https://www.qualcomm.com
 
 * CodeAurora
-
+  * https://www.codeaurora.org
 
