@@ -265,8 +265,9 @@ $ tba
 ```
 
 ![Switch added around the monitor mode alias/string](https://i.imgur.com/zD1br4j.jpg)
-
-
+<br>
+![Info](https://i.imgur.com/zp1zfqv.jpg)
+<br>
 ![Found a script present on the system](https://i.imgur.com/t1wBlun.jpg)
 
 
