@@ -1,13 +1,48 @@
-## qualcomm_android_monitor_mode
-#### Qualcomm WiFi tool adding monitor mode in Android
+
+# qualcomm_android_monitor_mode
+Qualcomm QCACLD WiFi (Android) monitor mode
+
+[![Monitor mode](https://img.shields.io/badge/monitor%20mode-working-brightgreen.svg)](#)
+[![Frame Injection](https://img.shields.io/badge/frame%20injection-working-brightgreen.svg)](#)
+[![GitHub version](https://raster.shields.io/badge/version-v5.6.4.2-lightgrey.svg)](#)
+[![GitHub issues](https://img.shields.io/github/issues/aircrack-ng/rtl8812au.svg)](https://github.com/aircrack-ng/rtl8812au/issues)
+[![GitHub forks](https://img.shields.io/github/forks/aircrack-ng/rtl8812au.svg)](https://github.com/aircrack-ng/rtl8812au/network)
+[![GitHub stars](https://img.shields.io/github/stars/aircrack-ng/rtl8812au.svg)](https://github.com/aircrack-ng/rtl8812au/stargazers)
+[![Build Status](https://travis-ci.org/aircrack-ng/rtl8812au.svg?branch=v5.6.4.2)](https://travis-ci.org/aircrack-ng/rtl8812au)
+[![GitHub license](https://img.shields.io/github/license/aircrack-ng/rtl8812au.svg)](https://github.com/aircrack-ng/rtl8812au/blob/master/LICENSE)
+<br>
+[![Kali](https://img.shields.io/badge/Kali-supported-blue.svg)](https://www.kali.org)
+[![Arch](https://img.shields.io/badge/Arch-supported-blue.svg)](https://www.archlinux.org)
+[![Armbian](https://img.shields.io/badge/Armbian-supported-blue.svg)](https://www.armbian.com)
+[![ArchLinux](https://img.shields.io/badge/ArchLinux-supported-blue.svg)](https://img.shields.io/badge/ArchLinux-supported-blue.svg)
+[![aircrack-ng](https://img.shields.io/badge/aircrack--ng-supported-blue.svg)](https://github.com/aircrack-ng/aircrack-ng)
+[![wifite2](https://img.shields.io/badge/wifite2-supported-blue.svg)](https://github.com/derv82/wifite2)
 
 
+### DEPENDENCIES
+```
+  * A rooted Android environment.
+  * WiFi chipset that uses the QCACLD driver/firmware.
+```
 
 
-### This is just an experiment, it may work or it may not depending on device,
-### which Android OS, drivers. Use at your own 'risk' for now. 
+### Make
+Building & Installing
+```
+$ tba
+```
 
-### Installation is simple, flash (and control) with Magisk Manager.
+### Notes
+tba
+```
+$ tba
+```
+Package / Build dependencies
+```
+$ tba
+```
+
+
 
 
 
