@@ -31,6 +31,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   * Upload a Android kernel patch
   * Upload missing images attached to above
   * Add a proper SETUP / HELP section
+  * Add a list of devices supported
 ```
 
 
