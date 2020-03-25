@@ -44,6 +44,11 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 ```
 
 
+### Logs / Outputs
+  * 'iw phy0 info' output is over here![Note](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/docs/iwphy_output.txt)
+
+
+
 ### Where did you find it?!
 I was fiddling around with IOCTL/monitor mode on another project,
 and ended up finding this commit https://github.com/MotorolaMobilityLLC/vendor-qcom-opensource-wlan-qcacld-3.0/commit/59f861d11d0daf043e33b23f2e3a050453ca6cb0
