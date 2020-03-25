@@ -18,6 +18,22 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 [![wifite2](https://img.shields.io/badge/wifite2-supported-blue.svg)](https://github.com/derv82/wifite2)
 
 
+### FIRST OFF!
+```
+  * This script/mod is EXPERIMENTAL as it is a development project and
+    may be used with CAUTION. YOUR ON YOUR OWN [ IF BRICKED ] OR SO !!
+```
+
+### TODO
+```
+  * Finish up the WRITE-UP
+  * Add PDF papers (datasheet) or/any docs related
+  * Upload a Android kernel patch
+  * Upload missing images attached to above
+  * Add a proper SETUP / HELP section
+```
+
+
 ### DEPENDENCIES
 ```
   * A rooted Android environment.
@@ -33,7 +49,7 @@ I was fiddling around with IOCTL/monitor mode on another project,
 and ended up finding this commit https://github.com/MotorolaMobilityLLC/vendor-qcom-opensource-wlan-qcacld-3.0/commit/59f861d11d0daf043e33b23f2e3a050453ca6cb0
 
 The howto is seen in the commit above
-```
+```sh
 Configure target to deliver 802.11 packets
 in raw mode. Below is the procedure to start the monitor mode.
 
@@ -51,7 +67,7 @@ Second I've found the parameter
 "con_mode_monitor" in the commit here https://gitlab.com/Codeaurora/platform_vendor_qcom-opensource_wlan_qcacld-3.0/-/commit/a307f63059c7fb5e89c12e057d80fe0948c11e3b
 
 However, the option is nowhere to be find in the list
-```
+```sh
 $ ip link set wlan0 up
 $ iwpriv wlan0
 
@@ -245,14 +261,14 @@ wlan0     Available private ioctls :
 ```
 Revealed it's not there.. So where else may I see the string/alias?
 ```
-$ 
+$ tba
 ```
 
 The image below explains it all, all code is present,
 but monitor mode is turned off by default.
 
 
-[IMAGE IS COMING]
+[IMAGES IS COMING]
 
 
 
