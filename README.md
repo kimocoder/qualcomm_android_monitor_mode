@@ -32,6 +32,19 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 I was fiddling around with IOCTL/monitor mode on another project,
 and ended up finding this commit https://github.com/MotorolaMobilityLLC/vendor-qcom-opensource-wlan-qcacld-3.0/commit/59f861d11d0daf043e33b23f2e3a050453ca6cb0
 
+The howto is seen in the commit above
+```
+Configure target to deliver 802.11 packets
+in raw mode. Below is the procedure to start the monitor mode.
+
+$ insmod /system/lib/modules/wlan.ko con_mode=4
+$ ifconfig wlan0 up
+$ "iwpriv wlan0 setMonChan 36 2"
+or
+$ "iw dev mon0 set channel 36 HT40+"
+$ tcpdump -i wlan0 -w <tcpdump.pcap>
+```
+
 And from there I got interested right away, as QCACLD is used in various devices.
 
 Second I've found the parameter
@@ -57,6 +70,7 @@ Package / Build dependencies
 $ tba
 ```
 
+### Credits
 
 
 
