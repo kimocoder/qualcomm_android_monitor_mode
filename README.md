@@ -50,7 +50,14 @@ And from there I got interested right away, as QCACLD is used in various devices
 Second I've found the parameter
 "con_mode_monitor" in the commit here https://gitlab.com/Codeaurora/platform_vendor_qcom-opensource_wlan_qcacld-3.0/-/commit/a307f63059c7fb5e89c12e057d80fe0948c11e3b
 
-
+However, the option is nowhere to be find in the list
+```
+$ iwpriv wlan0 | grep "con_mode"
+```
+Revealed it's not there.. So where else may I see the string/alias?
+```
+$ 
+```
 
 
 ### Make
