@@ -267,6 +267,10 @@ $ tba
 ![Switch added around the monitor mode alias/string](https://i.imgur.com/zD1br4j.jpg)
 
 
+![Found a script present on the system](https://i.imgur.com/t1wBlun.jpg)
+
+
+
 The image below explains it all, all code is present,
 but monitor mode is turned off by default.
 
