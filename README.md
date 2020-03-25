@@ -45,7 +45,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 
 
 ### Logs / Outputs
-  * 'iw phy0 info' output is over here![Note](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/docs/iwphy_output.txt)
+  * 'iw phy0 info' output is over [here](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/docs/iwphy_output.txt)
 
 
 
