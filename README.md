@@ -21,6 +21,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 ### DEPENDENCIES
 ```
   * A rooted Android environment.
+  * A custom kernel (for now, as the firmware needs patch)
   * WiFi chipset that uses the QCACLD driver/firmware.
 ```
 
@@ -30,6 +31,7 @@ Building & Installing
 ```
 $ tba
 ```
+
 
 ### Notes
 tba
