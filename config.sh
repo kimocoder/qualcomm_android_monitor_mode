@@ -88,8 +88,8 @@ set_permissions() {
   set_perm_recursive  $MODPATH  0  0  0755  0644
   # TODO: use proper contexts?
   set_perm $MODPATH/system/xbin/iwpriv 0 0 0755
-  set_perm $MODPATH/system/xbin/monen 0 0 0755
-  set_perm $MODPATH/system/xbin/mondis 0 0 0755
+  set_perm $MODPATH/system/xbin/qcmon_on 0 0 0755
+  set_perm $MODPATH/system/xbin/qcmon_off 0 0 0755
 }
 
 ##########################################################################################
