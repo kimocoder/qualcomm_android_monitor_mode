@@ -59,26 +59,24 @@ Revealed it's not there.. So where else may I see the string/alias?
 $ 
 ```
 
-
-### Make
-Building & Installing
-```
-$ tba
-```
+The image below explains it all, all code is present,
+but monitor mode is turned off by default.
 
 
-### Notes
-tba
-```
-$ tba
-```
-Package / Build dependencies
-```
-$ tba
-```
+[IMAGE IS COMING]
+
+
+
+
+
 
 ### Credits
+* kimocoder
+  Twitter: https://twitter.com/kimocoder
+  Telegram channel: https://t.me/joinchat/AAAAAFDVPDIHabBJwhL1Mw
 
+* Qualcomm
 
+* CodeAurora
 
 
