@@ -72,8 +72,8 @@ but monitor mode is turned off by default.
 
 ### Credits
 * kimocoder
-  Twitter: https://twitter.com/kimocoder
-  Telegram channel: https://t.me/joinchat/AAAAAFDVPDIHabBJwhL1Mw
+  * Twitter: https://twitter.com/kimocoder
+  * Telegram channel: https://t.me/joinchat/AAAAAFDVPDIHabBJwhL1Mw
 
 * Qualcomm
 
