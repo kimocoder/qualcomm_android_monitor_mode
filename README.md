@@ -264,6 +264,9 @@ Revealed it's not there.. So where else may I see the string/alias?
 $ tba
 ```
 
+![Switch added around the monitor mode alias/string](https://i.imgur.com/zD1br4j.jpg)
+
+
 The image below explains it all, all code is present,
 but monitor mode is turned off by default.
 
