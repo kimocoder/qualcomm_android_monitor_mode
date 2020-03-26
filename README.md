@@ -28,10 +28,10 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 ```
   * Finish up the WRITE-UP
   * Add PDF papers (datasheet) or/any docs related
-  * Upload a Android kernel patch
   * Upload missing images attached to above
   * Add a proper SETUP / HELP section
   * Add a list of devices supported
+  * Clean up the README.md
 ```
 
 
@@ -269,6 +269,10 @@ Revealed it's not there.. So where else may I see the string/alias?
 ```
 $ tba
 ```
+
+### Downloads / Patches
+  * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/monitor_mode.patch)
+
 
 ![Switch added around the monitor mode alias/string](https://i.imgur.com/zD1br4j.jpg)
 <br>
