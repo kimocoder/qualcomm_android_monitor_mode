@@ -18,10 +18,10 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 [![wifite2](https://img.shields.io/badge/wifite2-supported-blue.svg)](https://github.com/derv82/wifite2)
 
 
-### IMPORTANT NOTES
+### NOTES
 ```
-  * Monitor mode on QCACLD (QualComm) WiFi (Android) driver is very much possible as the
-    modes has been supported all the way, but I stumbled upon a switch that Qualcomm had DISABLED. Simple as that!
+  Monitor mode on QCACLD (QualComm) WiFi (Android) driver is very much possible as the
+  modes has been supported all the way, but I stumbled upon a switch that Qualcomm/vendors had DISABLED.
 ```
 
 ### DEPENDENCIES
@@ -34,24 +34,11 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   may have it WORKING from vendor. I see most wan't it turned OFF, some not .. We'll see!
 ```
 
-### TODO
-```
-  * Add a proper SETUP / HELP section
-  * Add a list of devices supported
-  * Clean up the README.md
-```
 
+### HowTo GeT it MONITORING !
 
-### Logs / Outputs
-
-* 'iw phy0 info' output is over [here](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/docs/iwphy_output.txt)
-
-
-
-### How do I activate it !?
-
-Configure target to deliver 802.11 packets in raw mode.
-Below is the procedure to start the monitor mode and channel settings + tcpdump
+Configure device to deliver 802.11 packets in raw mode.
+Below is the example of starting monitor mode and channel settings + tcpdump
 
 ```sh
 $ insmod /system/lib/modules/wlan.ko con_mode=4
@@ -60,11 +47,28 @@ $ "iwpriv wlan0 setMonChan 36 2"
 
 or
 
-$ "iw dev mon0 set channel 36 HT40+"
+$ iw dev mon0 set channel 36 HT40+
 $ tcpdump -i wlan0 -w <tcpdump.pcap>
 ```
 
-<br><br><br>
+
+### TODO
+```
+  * Add a proper SETUP / HELP section
+  * Add a list of devices supported
+  * Clean up the README.md
+```
+
+
+
+
+### Logs / Outputs
+
+* 'iw phy0 info' output is over [here](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/docs/iwphy_output.txt)
+
+
+
+
 
 ### Downloads / Patches
   * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/enable_monitor_mode.patch)
@@ -74,8 +78,7 @@ $ tcpdump -i wlan0 -w <tcpdump.pcap>
 Here are some tests done by @re4son and @DJY below..
 Seems to be working just about perfect.
 ```
-
-<br><br><br><br>
+<br><br>
 ![Setting up a custom command](https://i.imgur.com/cTJhOTB.jpg)
 <br><br>
 ![Running monitor mode](https://i.imgur.com/s5gzFso.jpg)
