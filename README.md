@@ -36,7 +36,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   may have it WORKING from vendor. I see most wan't it turned OFF, some not .. We'll see!
 ```
 
-
+<br><br><br>
 ### HowTo GeT it MONITORING !
 
 Configure device to deliver 802.11 packets in raw mode.
@@ -56,9 +56,9 @@ $ tcpdump -i wlan0 -w <tcpdump.pcap>
 
 <br><br><br>
 ### Logs / Outputs
-```
+
 * 'iw phy0 info' output is over [here](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/docs/iwphy_output.txt)
-```
+
 
 <br><br><br>
 ### Credits
