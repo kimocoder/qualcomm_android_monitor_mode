@@ -285,7 +285,7 @@ You'll find it in QCACLD's 'default_defconfig', where it has been DISABLED (n) b
 <br><br>
 ![Info](https://i.imgur.com/zp1zfqv.jpg)
 <br><br>
-![Found a script present on the system](https://i.imgur.com/t1wBlun.jpg)
+![Running monitor mode](https://i.imgur.com/s5gzFso.jpg)
 <br><br><br><br><br><br>
 
 
