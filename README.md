@@ -266,18 +266,18 @@ wlan0     Available private ioctls :
           set_ft_ies       (8BF4) : set 384 char  & get   0      
 ```
 Revealed it's not there.. So where else may I see the string/alias?
-```
+```sh
 $ tba
 ```
 
 ### Downloads / Patches
   * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/monitor_mode.patch)
 
-
+<br><br><br>
 ![Switch added around the monitor mode alias/string](https://i.imgur.com/zD1br4j.jpg)
-<br>
+<br><br>
 ![Info](https://i.imgur.com/zp1zfqv.jpg)
-<br>
+<br><br>
 ![Found a script present on the system](https://i.imgur.com/t1wBlun.jpg)
 
 
