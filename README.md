@@ -54,19 +54,19 @@ $ tcpdump -i wlan0 -w <tcpdump.pcap>
 ```
 
 
-<br><br><br>
+<br><br>
 ### Logs / Outputs
 
 * 'iw phy0 info' output is over [here](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/docs/iwphy_output.txt)
 
 
-<br>br><br>
+<br><br>
 ### Downloads / Patches
   * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/enable_monitor_mode.patch)
 <br><br>
 
 
-<br><br><br>
+<br><br>
 ### Credits
 * kimocoder
   * Twitter: https://twitter.com/kimocoder
