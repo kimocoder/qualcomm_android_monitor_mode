@@ -281,7 +281,7 @@ You'll find it in QCACLD's 'default_defconfig', where it has been DISABLED (n) b
 ```
 
 <br><br><br><br>
-![Switch added around the monitor mode alias/string](https://i.imgur.com/zD1br4j.jpg)
+![Setting up a custom command](https://i.imgur.com/cTJhOTB.jpg)
 <br><br>
 ![Info](https://i.imgur.com/zp1zfqv.jpg)
 <br><br>
