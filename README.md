@@ -273,13 +273,15 @@ $ tba
 ### Downloads / Patches
   * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/enable_monitor_mode.patch)
 
+
+<br><br><br><br>
 ```
 As seen below, a switch has been added to the function/string to control it.
 The name of the switch is "FEATURE_MONITOR_MODE_SUPPORT".
 You'll find it in QCACLD's 'default_defconfig', where it has been DISABLED (n) by default.
 ```
 
-<br><br><br><br><br><br>
+<br><br><br><br>
 ![Switch added around the monitor mode alias/string](https://i.imgur.com/zD1br4j.jpg)
 <br><br>
 ![Info](https://i.imgur.com/zp1zfqv.jpg)
