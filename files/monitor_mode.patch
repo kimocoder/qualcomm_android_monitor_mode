@@ -1,0 +1,31 @@
+From 948c8f053767e290e589a1fc577f9852c9ed4d4f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Christian=20Bremv=C3=A5g?= <christian@aircrack-ng.org>
+Date: Thu, 26 Mar 2020 01:34:41 +0100
+Subject: [PATCH] Activate monitor mode by default
+
+---
+ drivers/staging/qcacld-3.0/configs/default_defconfig | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/staging/qcacld-3.0/configs/default_defconfig b/drivers/staging/qcacld-3.0/configs/default_defconfig
+index 8e7f42665cee..0da3f55b4278 100644
+--- a/drivers/staging/qcacld-3.0/configs/default_defconfig
++++ b/drivers/staging/qcacld-3.0/configs/default_defconfig
+@@ -517,7 +517,7 @@ CONFIG_WLAN_NUD_TRACKING := n
+ CONFIG_WLAN_WBUFF := y
+ 
+ #Flag to enable set and get disable channel list feature
+-CONFIG_DISABLE_CHANNEL_LIST :=y
++CONFIG_DISABLE_CHANNEL_LIST := y
+ 
+ #Flag to enable beacon receive feature
+ CONFIG_WLAN_BCN_RECV_FEATURE := y
+@@ -561,7 +561,7 @@ CONFIG_CONVERGED_TDLS_ENABLE := y
+ CONFIG_WLAN_CONV_SPECTRAL_ENABLE := y
+ CONFIG_WLAN_SPECTRAL_ENABLE := y
+ CONFIG_WMI_CMD_STRINGS := y
+-CONFIG_FEATURE_MONITOR_MODE_SUPPORT := n
++CONFIG_FEATURE_MONITOR_MODE_SUPPORT := y
+ CONFIG_DESC_DUP_DETECT_DEBUG := n
+ CONFIG_DEBUG_RX_RING_BUFFER := n
+ CONFIG_WLAN_FEATURE_TWT := y
