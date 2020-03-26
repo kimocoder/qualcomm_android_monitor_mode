@@ -22,6 +22,8 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 ```
   Monitor mode on QCACLD (QualComm) WiFi (Android) driver is very much possible as the
   modes has been supported all the way, but I stumbled upon a switch that Qualcomm/vendors had DISABLED.
+  
+  We've added some screenshots / tests of 'airodump-ng', 'wifite' and 'tcpdump' down at the bottom here.
 ```
 
 ### DEPENDENCIES
@@ -52,42 +54,13 @@ $ tcpdump -i wlan0 -w <tcpdump.pcap>
 ```
 
 
-### TODO
-```
-  * Add a proper SETUP / HELP section
-  * Add a list of devices supported
-  * Clean up the README.md
-```
-
-
-
-
+<br><br><br>
 ### Logs / Outputs
-
+```
 * 'iw phy0 info' output is over [here](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/docs/iwphy_output.txt)
-
-
-
-
-
-### Downloads / Patches
-  * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/enable_monitor_mode.patch)
+```
 
 <br><br><br>
-```
-Here are some tests done by @re4son and @DJY below..
-Seems to be working just about perfect.
-```
-<br><br>
-![Setting up a custom command](https://i.imgur.com/cTJhOTB.jpg)
-<br><br>
-![Running monitor mode](https://i.imgur.com/s5gzFso.jpg)
-<br><br>
-![Running wifite2](https://i.imgur.com/VNpiXEk.jpg)
-<br><br><br><br><br><br>
-
-
-
 ### Credits
 * kimocoder
   * Twitter: https://twitter.com/kimocoder
@@ -98,4 +71,20 @@ Seems to be working just about perfect.
 
 * CodeAurora
   * https://www.codeaurora.org
+<br><br><br>
+
+
+### Downloads / Patches
+  * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/enable_monitor_mode.patch)
+
+<br><br><br>
+#### Here are some tests done by @re4son and @DJY below..
+#### Seems to be working just about perfect.
+<br><br>
+![Setting up a custom command](https://i.imgur.com/cTJhOTB.jpg)
+<br><br>
+![Running monitor mode](https://i.imgur.com/s5gzFso.jpg)
+<br><br>
+![Running wifite2](https://i.imgur.com/VNpiXEk.jpg)
+<br><br><br><br><br><br>
 
