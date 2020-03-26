@@ -271,7 +271,7 @@ $ tba
 ```
 
 ### Downloads / Patches
-  * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/monitor_mode.patch)
+  * Android QCACLD-3.0 patch to enable monitor mode - [DOWNLOAD HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/raw/master/files/enable_monitor_mode.patch)
 
 <br><br><br>
 ![Switch added around the monitor mode alias/string](https://i.imgur.com/zD1br4j.jpg)
