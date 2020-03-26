@@ -21,7 +21,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 ### FIRST OFF!
 ```
   * This script/mod is EXPERIMENTAL as it is a development project and
-    may be used with CAUTION. YOUR ON YOUR OWN [ IF BRICKED ] OR SO !!
+    must be used with CAUTION. YOUR ON YOUR OWN [ IF BRICKED ] OR SO !!
 ```
 
 ### TODO
