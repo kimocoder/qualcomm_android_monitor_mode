@@ -18,17 +18,16 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 [![wifite2](https://img.shields.io/badge/wifite2-supported-blue.svg)](https://github.com/derv82/wifite2)
 
 
-### FIRST OFF!
+### IMPORTANT NOTES / SETUP
 ```
-  * This script/mod is EXPERIMENTAL as it is a development project and
-    must be used with CAUTION. YOUR ON YOUR OWN [ IF BRICKED ] OR SO !!
+  * Monitor mode on QCACLD (QualComm) WiFi (Android) driver is very much possible.
+
+
+
 ```
 
 ### TODO
 ```
-  * Finish up the WRITE-UP
-  * Add PDF papers (datasheet) or/any docs related
-  * Upload missing images attached to above
   * Add a proper SETUP / HELP section
   * Add a list of devices supported
   * Clean up the README.md
