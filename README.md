@@ -37,20 +37,21 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 ```
 
 <br><br><br>
-### HowTo GeT it MONITORING !
+### HowTo GeT that MONITORING !
 
 Configure device to deliver 802.11 packets in raw mode.
 Below is the example of starting monitor mode and channel settings + tcpdump
 
+Start monitor mode on adapter
 ```sh
-$ insmod /system/lib/modules/wlan.ko con_mode=4
-$ ifconfig wlan0 up
-$ "iwpriv wlan0 setMonChan 36 2"
+echo "4" > /sys/module/parameters/con_mode
+```
 
-or
-
-$ iw dev mon0 set channel 36 HT40+
-$ tcpdump -i wlan0 -w <tcpdump.pcap>
+Stop monitor mode on adapter
+```sh
+ip link set wlan0 down
+echo "0" > /sys/module/parameters/con_mode
+ip link set wlan0 up
 ```
 
 
@@ -71,6 +72,10 @@ $ tcpdump -i wlan0 -w <tcpdump.pcap>
 * kimocoder
   * Twitter: https://twitter.com/kimocoder
   * Telegram channel: https://t.me/joinchat/AAAAAFDVPDIHabBJwhL1Mw
+  
+* @re4son
+
+* DJY
 
 * Qualcomm
   * https://www.qualcomm.com
