@@ -29,7 +29,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   PLEASE ADD IT TO THIS LIST OVER [HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/LIST_OF_DEVICES.txt)
 
 
-
+<br><br><br><br>
 ### DEPENDENCIES
 ```sh
   1. A rooted Android environment.
