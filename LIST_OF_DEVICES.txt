@@ -1,9 +1,25 @@
 
+  Some vendors has actually just turned this switch to 'ON' lately, so some
+  phones will actually work out of the box.
 
-  OnePlus 7T & Pro
-  OnePlus 7 & Pro
+  ----------------------------------------------------------------------------
+  Phone / Device                  Need patching?
+  ----------------------------------------------------------------------------
+  OnePlus 7T & Pro                     Yes
+  OnePlus 7 & Pro                      Yes
+  Poco F1                               No
   
   
   
   
-  
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
