@@ -19,7 +19,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 
 
 ### NOTES
-```
+```sh
   Monitor mode on QCACLD (QualComm) WiFi (Android) driver is very much possible as the
   modes has been supported all the way, but I stumbled upon a switch that Qualcomm/vendors had DISABLED.
   
@@ -28,16 +28,18 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   
   IF YOU HAVE A DEVICE/PHONE THAT SUPPORTS (IS RUNNING) QCACLD WIFI SOC FIRMWARE,
   PLEASE ADD IT TO THIS LIST OVER [HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/LIST_OF_DEVICES.txt)
+  
 ```
 
 ### DEPENDENCIES
-```
+```sh
   1. A rooted Android environment.
   2. Either compile a kernel yourself (NetHunter chroot works)
   3. WiFi chipset that actually uses the QCACLD driver/firmware.
   
   Older devices/drivers would need the patch from 'files', future kernels of 4.9, 4.14, 4.19
   may have it WORKING from vendor. I see most wan't it turned OFF, some not .. We'll see!
+  
 ```
 
 <br><br>
