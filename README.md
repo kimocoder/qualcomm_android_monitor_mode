@@ -24,12 +24,11 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   modes has been supported all the way, but I stumbled upon a switch that Qualcomm/vendors had DISABLED.
   
   We've added some screenshots / tests of 'airodump-ng', 'wifite' and 'tcpdump' down at the bottom here.
-  
-  
+```
   IF YOU HAVE A DEVICE/PHONE THAT SUPPORTS (IS RUNNING) QCACLD WIFI SOC FIRMWARE,
   PLEASE ADD IT TO THIS LIST OVER [HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/LIST_OF_DEVICES.txt)
-  
-```
+
+
 
 ### DEPENDENCIES
 ```sh
