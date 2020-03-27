@@ -44,13 +44,13 @@ Below is the example of starting monitor mode and channel settings + tcpdump
 
 Start monitor mode on adapter
 ```sh
-echo "4" > /sys/module/parameters/con_mode
+echo "4" > /sys/module/wlan/parameters/con_mode
 ```
 
 Stop monitor mode on adapter
 ```sh
 ip link set wlan0 down
-echo "0" > /sys/module/parameters/con_mode
+echo "0" > /sys/module/wlan/parameters/con_mode
 ip link set wlan0 up
 ```
 
