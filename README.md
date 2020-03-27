@@ -24,6 +24,10 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   modes has been supported all the way, but I stumbled upon a switch that Qualcomm/vendors had DISABLED.
   
   We've added some screenshots / tests of 'airodump-ng', 'wifite' and 'tcpdump' down at the bottom here.
+  
+  
+  IF YOU HAVE A DEVICE/PHONE THAT SUPPORTS (IS RUNNING) QCACLD WIFI SOC FIRMWARE,
+  PLEASE ADD IT TO THIS LIST OVER [HERE](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/LIST_OF_DEVICES.txt)
 ```
 
 ### DEPENDENCIES
@@ -36,7 +40,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   may have it WORKING from vendor. I see most wan't it turned OFF, some not .. We'll see!
 ```
 
-<br><br><br>
+<br><br>
 ### HowTo GeT that MONITORING !
 
 Configure device to deliver 802.11 packets in raw mode.
@@ -73,9 +77,11 @@ ip link set wlan0 up
   * Twitter: https://twitter.com/kimocoder
   * Telegram channel: https://t.me/joinchat/AAAAAFDVPDIHabBJwhL1Mw
   
-* @re4son
+* @Re4son
+  * Url: https://github.com/Re4son
 
-* DJY
+* @johanlike (DJY)
+  * Url: https://github.com/johanlike/DJY-Nethunter-Andrax-Kernel-Source
 
 * Qualcomm
   * https://www.qualcomm.com
@@ -85,9 +91,9 @@ ip link set wlan0 up
 <br><br><br>
 
 
-<br><br>
-#### Here are some tests done by @re4son and @DJY below..
-#### Seems to be working just about perfect.
+
+
+
 <br><br>
 ![Setting up a custom command](https://i.imgur.com/cTJhOTB.jpg)
 <br><br>
