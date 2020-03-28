@@ -20,20 +20,12 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 
 ### NOTES
 ```sh
-  Monitor mode on QCACLD (QualComm) WiFi (Android) driver is very much possible as the
-  modes has been supported all the way, but I stumbled upon a switch that Qualcomm/vendors had DISABLED.
-  
-  We've added some screenshots / tests of 'airodump-ng', 'wifite' and 'tcpdump' down at the bottom here.
-  
-  We also need some basic control over the WiFi (switching modes), therefor
-  we've poered the latest IW with libnl for Android.
-  
-  Compile either arm32 or arm64 from below ..
-  https://github.com/kimocoder/android_tools_iw
+  An update!
 
-  And if you need 'IW' ported to Android to control/handle the WiFi, I've got a branc
-  IF YOU HAVE A DEVICE/PHONE THAT SUPPORTS (IS RUNNING) QCACLD WIFI SOC FIRMWARE, 
-  PLEASE ADD IT TO THIS LIST OVER [HERE]  (https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/LIST_OF_DEVICES.txt)
+  This methos will works OUT-of-the-BOX, it seems someone over at CodeAurora actually has flipped the switch
+  on monitor mode, so the kernel patch isn't really nescessary, only for they on older/inmaintained kernels.
+
+  Great news, less dirty tricks, less additions no/less additions to andor mess.
   ```
 
 <br><br><br>
