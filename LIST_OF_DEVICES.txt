@@ -8,9 +8,11 @@
   OnePlus 7T & Pro                      No
   OnePlus 7 & Pro                       No
   OnePlus 6 & 6T                        No
+  OnePlus 5                             No
   Poco F1                               No
   XiaoMi 8                              No
   XiaoMi 9                              No
+  Xiaomi Redmi Note 7                   No
   -------------------------------------------------------------------------------------------------------------------------
   
   
