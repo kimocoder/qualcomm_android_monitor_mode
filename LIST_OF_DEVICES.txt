@@ -5,9 +5,9 @@
   -------------------------------------------------------------------------------------------------------------------------
   Phone / Device                  Need patching?              Notes?
   -------------------------------------------------------------------------------------------------------------------------
-  OnePlus 7T & Pro                     Yes
-  OnePlus 7 & Pro                      Yes
-  OnePlus 6 & 6T                       Yes
+  OnePlus 7T & Pro                      No
+  OnePlus 7 & Pro                       No
+  OnePlus 6 & 6T                        No
   Poco F1                               No
   XiaoMi 8                              No
   XiaoMi 9                              No
