@@ -23,9 +23,9 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   An update!
 
   This method will work OUT-of-the-BOX, it seems someone over at CodeAurora actually has flipped the switch
-  on monitor mode, so the kernel patch isn't really nescessary, only for they on older/inmaintained kernels.
+  on monitor mode, so the kernel patch isn't really nescessary, only for they on older/unmaintained kernels.
 
-  Great news, less dirty tricks, less additions no/less additions to andor mess.
+  Great news, less dirty tricks, less additions no/less additions to vendor mess.
   ```
 
 <br><br><br>
