@@ -11,9 +11,6 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 [![GitHub license](https://img.shields.io/github/license/kimocoder/qualcomm_android_monitor_mode.svg)](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/LICENSE)
 <br>
 [![Kali](https://img.shields.io/badge/Kali-supported-blue.svg)](https://www.kali.org)
-[![Arch](https://img.shields.io/badge/Arch-supported-blue.svg)](https://www.archlinux.org)
-[![Armbian](https://img.shields.io/badge/Armbian-supported-blue.svg)](https://www.armbian.com)
-[![ArchLinux](https://img.shields.io/badge/ArchLinux-supported-blue.svg)](https://img.shields.io/badge/ArchLinux-supported-blue.svg)
 [![aircrack-ng](https://img.shields.io/badge/aircrack--ng-supported-blue.svg)](https://github.com/aircrack-ng/aircrack-ng)
 [![wifite2](https://img.shields.io/badge/wifite2-supported-blue.svg)](https://github.com/derv82/wifite2)
 
@@ -25,7 +22,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   This method will work OUT-of-the-BOX, it seems someone over at CodeAurora actually flipped the switch
   on monitor mode, so the kernel patch isn't really nescessary, only for they on older/unmaintained kernels.
 
-  Great news, less dirty tricks, less additions no/less additions to vendor mess.
+  Great news, less dirty tricks/patching needed.
   ```
 
 <br><br><br>
@@ -36,7 +33,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   3. WiFi chipset that actually uses the QCACLD driver/firmware.
   
   Older devices/drivers would need the patch from 'files', future kernels of 4.9, 4.14, 4.19
-  may have it WORKING from vendor. I see most wan't it turned OFF, some not .. We'll see!
+  may have it WORKING from vendor.
   
 ```
 
