@@ -75,13 +75,12 @@ ip link set wlan0 up
 ### Credits
 * kimocoder
   * Twitter: https://twitter.com/kimocoder
-  * Telegram channel: https://t.me/joinchat/AAAAAFDVPDIHabBJwhL1Mw
   
 * @Re4son
   * Url: https://github.com/Re4son
 
 * @johanlike (DJY)
-  * Url: https://github.com/johanlike/DJY-Nethunter-Andrax-Kernel-Source
+  * Url: https://github.com/johanlike
 
 * Qualcomm
   * https://www.qualcomm.com
