@@ -11,9 +11,6 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 [![GitHub license](https://img.shields.io/github/license/kimocoder/qualcomm_android_monitor_mode.svg)](https://github.com/kimocoder/qualcomm_android_monitor_mode/blob/master/LICENSE)
 <br>
 [![Kali](https://img.shields.io/badge/Kali-supported-blue.svg)](https://www.kali.org)
-[![Arch](https://img.shields.io/badge/Arch-supported-blue.svg)](https://www.archlinux.org)
-[![Armbian](https://img.shields.io/badge/Armbian-supported-blue.svg)](https://www.armbian.com)
-[![ArchLinux](https://img.shields.io/badge/ArchLinux-supported-blue.svg)](https://img.shields.io/badge/ArchLinux-supported-blue.svg)
 [![aircrack-ng](https://img.shields.io/badge/aircrack--ng-supported-blue.svg)](https://github.com/aircrack-ng/aircrack-ng)
 [![wifite2](https://img.shields.io/badge/wifite2-supported-blue.svg)](https://github.com/derv82/wifite2)
 
@@ -22,10 +19,10 @@ Qualcomm QCACLD WiFi (Android) monitor mode
 ```sh
   An update!
 
-  This methos will works OUT-of-the-BOX, it seems someone over at CodeAurora actually has flipped the switch
-  on monitor mode, so the kernel patch isn't really nescessary, only for they on older/inmaintained kernels.
+  This method will work OUT-of-the-BOX, it seems someone over at CodeAurora actually flipped the switch
+  on monitor mode, so the kernel patch isn't really nescessary, only for they on older/unmaintained kernels.
 
-  Great news, less dirty tricks, less additions no/less additions to andor mess.
+  Great news, less dirty tricks/patching needed.
   ```
 
 <br><br><br>
@@ -36,7 +33,7 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   3. WiFi chipset that actually uses the QCACLD driver/firmware.
   
   Older devices/drivers would need the patch from 'files', future kernels of 4.9, 4.14, 4.19
-  may have it WORKING from vendor. I see most wan't it turned OFF, some not .. We'll see!
+  may have it WORKING from vendor.
   
 ```
 
@@ -75,13 +72,12 @@ ip link set wlan0 up
 ### Credits
 * kimocoder
   * Twitter: https://twitter.com/kimocoder
-  * Telegram channel: https://t.me/joinchat/AAAAAFDVPDIHabBJwhL1Mw
   
 * @Re4son
   * Url: https://github.com/Re4son
 
 * @johanlike (DJY)
-  * Url: https://github.com/johanlike/DJY-Nethunter-Andrax-Kernel-Source
+  * Url: https://github.com/johanlike
 
 * Qualcomm
   * https://www.qualcomm.com
