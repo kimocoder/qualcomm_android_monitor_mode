@@ -6,7 +6,8 @@
   Phone / Device                  Need patching?              Notes?
   -------------------------------------------------------------------------------------------------------------------------
   Google Pixel 3a                       No
-  OnePlus 7T & Pro                      No
+  OnePlus 8 & 8 Pro                      ?
+  OnePlus 7T & 7T Pro                   No
   OnePlus 7 & Pro                       No
   OnePlus 6 & 6T                        No
   OnePlus 5 & 5T                        No
