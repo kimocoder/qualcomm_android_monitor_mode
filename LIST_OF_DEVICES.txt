@@ -1,6 +1,3 @@
-  -------------------------------------------------------------------------------------------------------------------------
-  Some vendors has actually just turned this switch to 'ON' lately, so some
-  phones will actually work out of the box.
 
   -------------------------------------------------------------------------------------------------------------------------
   Phone / Device                  Need patching?              Notes?
