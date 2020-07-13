@@ -33,12 +33,12 @@ Qualcomm QCACLD WiFi (Android) monitor mode
   3. WiFi chipset that actually uses the QCACLD driver/firmware.
   
   Older devices/drivers would need the patch from 'files', future kernels of 4.9, 4.14, 4.19
-  may have it WORKING from vendor.
-  
+  may have it WORKING from vendor. See "LIST_OF_DEVICES.txt" for known working phones.
+  Use issue reports for comments, new information that could help us get a working frame injection to it.
 ```
 
 <br><br>
-### HowTo GeT that MONITORING !
+### Howto get that MONITORING MODE working
 
 Configure device to deliver 802.11 packets in raw mode.
 Below is the example of starting monitor mode and channel settings + tcpdump
@@ -53,6 +53,19 @@ Stop monitor mode on adapter
 ip link set wlan0 down
 echo "0" > /sys/module/wlan/parameters/con_mode
 ip link set wlan0 up
+```
+
+<br><br>
+### Information about frame injection
+
+I've found phones with frame injection support present.
+The phone is OnePlus 3T with lineageos 17.1, it has the QCACLD-2 driver, which QCACLD-3 replaced.
+However, finding the solution in QCACLD-2 to port to QCACLD-3 seems like an ok solution instead of
+fiddling around half blind in QCACLD-3, propably deactivated by Qualcomm.
+
+Thread will be updated.
+```sh
+echo "4" > /sys/module/wlan/parameters/con_mode
 ```
 
 
