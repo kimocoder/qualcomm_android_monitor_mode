@@ -9,13 +9,14 @@
   OnePlus 6 & 6T                        No
   OnePlus 5 & 5T                        No
   Poco F1                               No
-  XiaoMi 8                              No
-  XiaoMi 9                              No
-  XiaoMi Redmi Note 7                   No
-  XiaoMi Redmi 5 Plus                   No
+  Xiaomi Mi 8                           No
+  Xiaomi Mi 9                           No
+  Xiaomi Redmi Note 7                   No
+  Xiaomi Redmi 5 Plus                   No
   Xiaomi Redmi K20 Pro                  No
   Xiaomi Redmi Note 4X (Snapdragon)     No
   Xiaomi Redmi 5A                       No
+  Xiaomi Mi Mix 2S                      No
   -------------------------------------------------------------------------------------------------------------------------
   
   
