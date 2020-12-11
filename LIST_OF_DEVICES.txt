@@ -9,6 +9,7 @@
   OnePlus 6 & 6T                        No
   OnePlus 5 & 5T                        No
   Poco F1                               No
+  Poco X3                               No
   XiaoMi 8                              No
   XiaoMi 9                              No
   XiaoMi Redmi Note 7                   No
