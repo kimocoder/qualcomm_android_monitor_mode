@@ -16,6 +16,7 @@
   Xiaomi Redmi K20 Pro                  No
   Xiaomi Redmi Note 4X (Snapdragon)     No
   Xiaomi Redmi 5A                       No
+  Asus Zenfone Max Pro M1               No
   -------------------------------------------------------------------------------------------------------------------------
   
   
