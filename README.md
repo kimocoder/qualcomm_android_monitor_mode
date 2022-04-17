@@ -86,8 +86,12 @@ https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.
 You see the radiotap parser defines its guarding.'
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/blob/wlan-cld3.driver.lnx.2.0.r60-rel/components/pkt_capture/core/inc/wlan_pkt_capture_data_txrx.h#L36
 
+'qcacld-3.0: Fill correct 802.11hdr in rx data pkts in pkt capture mode'
+https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/commit/60cebbb9e9884de7310623b25549c96e41f63333
+
 'this is the struct where the packet/payload gets crafted'
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/blob/wlan-cld3.driver.lnx.2.0.r60-rel/components/pkt_capture/core/src/wlan_pkt_capture_main.c#L255
+
 
 And we have more clues below:
 
