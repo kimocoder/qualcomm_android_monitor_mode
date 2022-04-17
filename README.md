@@ -69,16 +69,24 @@ Original commit where frame injection was added in QCACLD-2
 https://gitlab.com/Codeaurora/platform_vendor_qcom-opensource_wlan_qcacld-2.0/-/commit/3d3ad7877d1b4d097b4302a4293a1cbb2478e7bf
 
 
-
 Got great news regarding QCACLD-3 frame/packet injection.
 Another device ordered for testing.
 
 
+Research recovered this has been pushed to a few branches, devices is:
+BERYLLIUM and HELIUM for now. CAF tag: wlan-cld3.driver.lnx.2.0.r60-rel
+```sh
+qcacld-3.0: vendor command changes to configure parameters for monitor mode
+https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/-/commit/db872287ef87a6c2765a7612f1eb3246c98c48e0
+
+qcacld-3.0: Update path for monitor files
+https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/commit/35736804a84aa4340102d2897e4bc5626761be83
+
+fw-api: Add hw headers for wkk monitor
+https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api/-/commit/4b855f97afe633afe0addfb7f44865c88fc42c02
+```
 
 Thread will be updated.
-
-
-
 
 
 <br><br>
