@@ -78,26 +78,29 @@ BERYLLIUM and HELIUM for now. CAF tag: wlan-cld3.driver.lnx.2.0.r60-rel
 
 Research links and base knowledge ..
 ```sh
-For parsing frame injection capabilities you need "radiotap iterator" available.
-If the radiotap iterator is found like below, the chance is big for frame capabilities.
+'For parsing frame injection capabilities you need "radiotap iterator" available.
+If the radiotap iterator is found like below, the chance is big for frame capabilities.'
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/blob/wlan-cld3.driver.lnx.2.0.r60-rel/components/pkt_capture/core/inc/wlan_pkt_capture_mon_thread.h#L124
 
-This string we will need to take a note of, because this was added to turn this capabilities of specific.
-You see the radiotap parser defines it's guarding.
+'This string we will need to take a note of, because this was added to turn this capabilities of specific.
+You see the radiotap parser defines its guarding.'
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/blob/wlan-cld3.driver.lnx.2.0.r60-rel/components/pkt_capture/core/inc/wlan_pkt_capture_data_txrx.h#L36
+
+'this is the struct where the packet/payload gets crafted'
+https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/blob/wlan-cld3.driver.lnx.2.0.r60-rel/components/pkt_capture/core/src/wlan_pkt_capture_main.c#L255
 
 And we have more clues below:
 
-qcacld-3.0: Add INI parameter for packet capture mode support
+'qcacld-3.0: Add INI parameter for packet capture mode support'
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/blob/wlan-cld3.driver.lnx.2.0.r60-rel/components/pkt_capture/dispatcher/inc/cfg_pkt_capture.h
 
-qcacld-3.0: vendor command changes to configure parameters for monitor mode
+'qcacld-3.0: vendor command changes to configure parameters for monitor mode'
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/-/commit/db872287ef87a6c2765a7612f1eb3246c98c48e0
 
-qcacld-3.0: Update path for monitor files
+'qcacld-3.0: Update path for monitor files'
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/commit/35736804a84aa4340102d2897e4bc5626761be83
 
-fw-api: Add hw headers for wkk monitor
+'fw-api: Add hw headers for wkk monitor'
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api/-/commit/4b855f97afe633afe0addfb7f44865c88fc42c02
 ```
 
