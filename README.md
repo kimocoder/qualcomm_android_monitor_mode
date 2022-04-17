@@ -45,7 +45,9 @@ Below is the example of starting monitor mode and channel settings + tcpdump
 
 Start monitor mode on adapter
 ```sh
+ip link set wlan0 down
 echo "4" > /sys/module/wlan/parameters/con_mode
+ip link set wlan0 up
 ```
 
 Stop monitor mode on adapter
@@ -63,10 +65,20 @@ The phone is OnePlus 3T with lineageos 17.1, it has the QCACLD-2 driver, which Q
 However, finding the solution in QCACLD-2 to port to QCACLD-3 seems like an ok solution instead of
 fiddling around half blind in QCACLD-3, propably deactivated by Qualcomm.
 
+Original commit where frame injection was added in QCACLD-2
+https://gitlab.com/Codeaurora/platform_vendor_qcom-opensource_wlan_qcacld-2.0/-/commit/3d3ad7877d1b4d097b4302a4293a1cbb2478e7bf
+
+
+
+Got great news regarding QCACLD-3 frame/packet injection.
+Another device ordered for testing.
+
+
+
 Thread will be updated.
-```sh
-echo "4" > /sys/module/wlan/parameters/con_mode
-```
+
+
+
 
 
 <br><br>
