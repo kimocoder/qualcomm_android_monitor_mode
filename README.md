@@ -76,6 +76,9 @@ Another device ordered for testing.
 Research recovered this has been pushed to a few branches, devices is:
 BERYLLIUM and HELIUM for now. CAF tag: wlan-cld3.driver.lnx.2.0.r60-rel
 ```sh
+qcacld-3.0: Add INI parameter for packet capture mode support
+https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/-/blob/wlan-cld3.driver.lnx.2.0.r60-rel/components/pkt_capture/dispatcher/inc/cfg_pkt_capture.h
+
 qcacld-3.0: vendor command changes to configure parameters for monitor mode
 https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/-/commit/db872287ef87a6c2765a7612f1eb3246c98c48e0
 
