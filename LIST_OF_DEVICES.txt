@@ -13,11 +13,12 @@
   Poco X3                               No
   Xiaomi 8                              No
   Xiaomi 9                              No
+  Xiaomi 11 Lite 5G NE (lisa)           No                 Tested on MIUI 14.0.8, Linux kernel v5.4.210
   Xiaomi Redmi Note 7                   No
   Xiaomi Redmi 5 Plus                   No
   Xiaomi Redmi K20 Pro                  No
   Xiaomi Redmi Note 4X (Snapdragon)     No
-  Xiaomi Redmi 5A                       No
+  Xiaomi Redmi 5A                       No                 Channel hopping doesn't work with airodump-ng; manual channel switching using `iwpriv wlan0 MonitorModeConf <CONFIG>` is required
   Asus Zenfone Max Pro M1               No
   Xiaomi MI A3                          Yes                Tested on MIUI port of CC9e
   Xiaomi Mi Mix 2S                      No
