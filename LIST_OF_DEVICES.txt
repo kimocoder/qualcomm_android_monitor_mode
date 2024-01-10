@@ -13,6 +13,11 @@
   Poco X3                               No
   Xiaomi 8                              No
   Xiaomi 9                              No
+  Xiaomi 9T                             No
+  Xiaomi Redmi 9T                       No
+  Xiaomi Redmi 10T                      No
+  Xiaomi Redmi 11                       No
+  Xiaomi Redmi 12 4G                    No
   Xiaomi 11 Lite 5G NE (lisa)           No                 Tested on MIUI 14.0.8, Linux kernel v5.4.210
   Xiaomi Redmi Note 7                   No
   Xiaomi Redmi 5 Plus                   No
