@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enable Monitor Mode and Frame Injection on QCACLD-3.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+        }
+        .important {
+            background: #fff8c5;
+            border-left: 5px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .note {
+            background: #e7f3fe;
+            border-left: 5px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enable Monitor Mode and Frame Injection on QCACLD-3.0</h1>
+    
+    <h2>Step 1: Load Appropriate Firmware</h2>
+    <ol>
+        <li><strong>Check Firmware Compatibility:</strong>
+            <ul>
+                <li>Ensure the firmware supports monitor mode. Check the firmware files in <code>/lib/firmware/ath11k/qca6750/</code> or a similar location.</li>
+                <li>Common firmware files include:
+                    <ul>
+                        <li><code>fw_image_1.0.1.0.816.3.bin</code></li>
+                        <li><code>bdwlan.bin</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Patch Firmware (Optional):</strong>
+            <ul>
+                <li>Use tools like <code>hexedit</code> to modify flags in the binary.</li>
+                <li>Alternatively, search for community-patched firmware.</li>
+            </ul>
+        </li>
+        <li><strong>Replace and Reload Firmware:</strong>
+            <pre><code>sudo cp /lib/firmware/ath11k/qca6750/fw_image*.bin /lib/firmware/ath11k/qca6750/fw_image_backup.bin
+sudo modprobe -r wlan
+sudo modprobe wlan</code></pre>
+        </li>
+    </ol>
+
+    <h2>Step 2: Enable Monitor Mode in the Driver</h2>
+    <ol>
+        <li><strong>Clone and Configure QCACLD-3.0:</strong>
+            <pre><code>git clone https://github.com/Codelinaro/qcacld-3.0.git
+cd qcacld-3.0</code></pre>
+            Add the following to the configuration file (<code>config.ini</code> or similar):
+            <pre><code>gEnableSuspendMon=1
+gEnableMonitorMode=1
+gEnableFrameInjection=1</code></pre>
+        </li>
+        <li><strong>Compile and Install the Driver:</strong>
+            <pre><code>make defconfig
+make -j$(nproc)
+sudo make install
+sudo modprobe wlan</code></pre>
+        </li>
+    </ol>
+
+    <h2>Step 3: Activate Monitor Mode</h2>
+    <ol>
+        <li><strong>Check Available Interfaces:</strong>
+            <pre><code>iw dev</code></pre>
+        </li>
+        <li><strong>Enable Monitor Mode:</strong>
+            <pre><code>sudo iw wlan0 set type monitor
+sudo ifconfig wlan0 up</code></pre>
+        </li>
+        <li><strong>Verify Monitor Mode:</strong>
+            <pre><code>iw dev wlan0 info</code></pre>
+        </li>
+    </ol>
+
+    <h2>Step 4: Test Packet Injection</h2>
+    <ol>
+        <li><strong>Test with <code>aireplay-ng</code>:</strong>
+            <pre><code>aireplay-ng --test wlan0</code></pre>
+        </li>
+        <li><strong>Modify Frame Injection Parameters:</strong>
+            <ul>
+                <li>Ensure <code>HostARPOffload</code> and <code>HostNSOffload</code> are enabled in the driver.</li>
+                <li>Adjust parameters such as <code>skb_size</code> in the driver source code if necessary.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Step 5: Verify with Aircrack-ng</h2>
+    <ol>
+        <li><strong>Check Interface with <code>airmon-ng</code>:</strong>
+            <pre><code>airmon-ng start wlan0</code></pre>
+        </li>
+        <li><strong>Capture Packets with <code>airodump-ng</code>:</strong>
+            <pre><code>airodump-ng wlan0</code></pre>
+        </li>
+    </ol>
+
+    <div class="important">
+        <strong>Important:</strong> Always ensure that you comply with local laws and regulations when using monitor mode and packet injection.
+    </div>
+
+    <div class="note">
+        <strong>Note:</strong> If issues persist, check debugfs entries at <code>/sys/kernel/debug/</code> and use dmesg logs to troubleshoot.
+    </div>
+</body>
+</html>
