@@ -1,4 +1,131 @@
-# Enable Monitor Mode and Frame Injection on QCACLD-3.0
+## qca6750/wcn6750 devuce-tree configuration (dts)
+
+```bash
+    wifi: wifi@17a10040 {
+        compatible = "qcom,wcn6750-wifi";
+        reg = <0x17a10040 0x0>;
+        iommus = <&apps_smmu 0x1c00 0x1>;
+        interrupts = <GIC_SPI 768 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 769 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 770 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 771 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 772 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 773 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 774 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 775 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 776 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 777 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 778 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 779 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 780 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 781 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 782 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 783 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 784 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 785 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 786 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 787 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 788 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 789 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 790 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 791 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 792 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 793 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 794 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 795 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 796 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 797 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 798 IRQ_TYPE_EDGE_RISING>,
+                     <GIC_SPI 799 IRQ_TYPE_EDGE_RISING>;
+        qcom,rproc = <&remoteproc_wpss>;
+        memory-region = <&wlan_fw_mem>, <&wlan_ce_mem>;
+        qcom,smem-states = <&wlan_smp2p_out 0>;
+        qcom,smem-state-names = "wlan-smp2p-out";
+        wifi-firmware {
+            iommus = <&apps_smmu 0x1c02 0x1>;
+        };
+    };
+```
+
+# Device Tree Node: `wifi@17a10040`
+
+This Device Tree (DT) snippet describes the `wifi` node for a Qualcomm WCN6750 Wi-Fi module.
+
+---
+
+## Key Properties
+
+### `compatible`
+- Specifies the hardware compatibility string.  
+  **Value:** `"qcom,wcn6750-wifi"`
+
+### `reg`
+- Defines the physical address or offsets for the device.  
+  **Value:** `<0x17a10040 0x0>` (base address)
+
+### `iommus`
+- Links the device to the IOMMU (Input/Output Memory Management Unit).  
+  **Value:** `<&apps_smmu 0x1c00 0x1>`  
+  - `&apps_smmu`: Reference to the IOMMU node.
+  - `0x1c00`: IOMMU Stream ID.
+  - `0x1`: Context Bank ID.
+
+### `interrupts`
+- Declares 32 General Interrupt Controller (GIC) SPI interrupt lines.  
+  Each is configured as edge-triggered.  
+  **Values:** `<GIC_SPI 768 IRQ_TYPE_EDGE_RISING>` to `<GIC_SPI 799 IRQ_TYPE_EDGE_RISING>`  
+  Likely used for events such as communication errors, packet processing, or control signals.
+
+### `qcom,rproc`
+- Links the Wi-Fi module to a remote processor (`remoteproc`) node.  
+  **Value:** `<&remoteproc_wpss>` (associated remote processor)
+
+### `memory-region`
+- Points to memory regions reserved for Wi-Fi firmware and data:  
+  - `<&wlan_fw_mem>`: Firmware memory region.
+  - `<&wlan_ce_mem>`: Communication Engine (CE) memory for data transfers.
+
+### `qcom,smem-states` & `qcom,smem-state-names`
+- Configure shared memory (SMEM) state.  
+  **Values:**  
+  - `qcom,smem-states`: `<&wlan_smp2p_out 0>`  
+  - `qcom,smem-state-names`: `"wlan-smp2p-out"`
+
+### `wifi-firmware`
+- A sub-node for handling IOMMU settings specific to the firmware.  
+  **Value:** `<&apps_smmu 0x1c02 0x1>`  
+  - Additional IOMMU details for firmware operations.
+
+---
+
+## Purpose
+
+This node configures the WCN6750 Wi-Fi subsystem, ensuring proper integration with the SoC's:
+- Interrupt infrastructure
+- IOMMU
+- Remote processor
+- Memory architecture
+
+It supports communication between the application processor and the Wi-Fi subsystem.
+
+---
+
+## Observations and Suggestions
+
+1. **Interrupts:**
+   - Ensure all 32 interrupts are required; if not, optimize by defining only the used lines.
+
+2. **Memory Regions:**
+   - Verify that `wlan_fw_mem` and `wlan_ce_mem` sizes and attributes align with hardware documentation.
+
+3. **SMEM States:**
+   - Confirm that `wlan_smp2p_out` is correctly linked to the shared memory node.
+
+4. **Testing:**
+   - Validate this configuration using kernel logs (`dmesg`) to ensure proper initialization.
+
+
+# Firmware
 
 ## Step 1: Load Appropriate Firmware
 
