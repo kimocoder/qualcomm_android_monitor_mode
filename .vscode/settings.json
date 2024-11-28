@@ -1,0 +1,4 @@
+{
+    "workbench.editor.defaultBinaryEditor": "markdown-preview-enhanced",
+    "notebook.defaultFormatter": "bierner.markdown-preview-github-styles"
+}
